@@ -3,7 +3,7 @@ Feature: add products to comparelist
   Scenario: user can add different products to comparelist
     Given user go to register page
     And user enter first name "Ahmed" and last name "Fares"
-    And user enter email "fares.ahmed6@gmail.com" field
+    And user enter email "fares.ahmed126@gmail.com" field
     And user fills Password fields "P@ssw0rd" "P@ssw0rd"
     And user clicks on register button
     Then success message is displayed

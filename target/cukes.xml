@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="14" time="184.42">
+<testcase classname="F01_Register | users could register with new accounts" name="guest user could register with valid data successfully" time="15.054">
+<system-out><![CDATA[Given user go to register page..............................................passed
+When user select gender type................................................passed
+And user enter first name "Ahmed" and last name "Fares".....................passed
+And user enter date of birth................................................passed
+And user enter email "fares.ahmed111@gmail.com" field.......................passed
+And user fills Password fields "P@ssw0rd" "P@ssw0rd"........................passed
+And user clicks on register button..........................................passed
+Then success message is displayed...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F02_Login | users could use login functionality to use their accounts" name="user could login with valid email and password" time="19.881">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.ico\-account&quot;}&#10;  (Session info: chrome=108.0.5359.99)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.6.0', revision: '79f1c02ae20'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [c6e79835990f6cc3efc7d591ab9dc89a, findElement {using=class name, value=ico-account}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\3D\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:59268}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59268/devtoo..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c6e79835990f6cc3efc7d591ab9dc89a" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user go to login page.................................................passed
+When user login with "valid" "fares.ahmed112@gmail.com" and "P@ssw0rd"......passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".ico\-account"}
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c6e79835990f6cc3efc7d591ab9dc89a, findElement {using=class name, value=ico-account}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\3D\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:59268}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59268/devtoo..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c6e79835990f6cc3efc7d591ab9dc89a
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at Pages.P02_login.getMyAccountTab(P02_login.java:21)
+	at StepDefinitions.D02_loginStepDef.user_login_to_the_system_successfully(D02_loginStepDef.java:35)
+	at ✽.user login to the system successfully(file:///C:/Users/3D/IdeaProjects/EcommerceB2c/src/main/resources/Features/F02_Login.feature:7)
+]]></failure>
+</testcase>
+<testcase classname="F02_Login | users could use login functionality to use their accounts" name="user could login with invalid email and password" time="10.081">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with "invalid" "wrong@example.com" and "P@ssw0rd"...........passed
+And user press on login button..............................................passed
+Then user could not login to the system.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Reset Password" name="user register in site" time="10.518">
+<system-out><![CDATA[Given user go to register page..............................................passed
+And user enter first name "Ahmed" and last name "Fares".....................passed
+And user enter email "fares.ahmed112@gmail.com" field.......................passed
+And user fills Password fields "P@ssw0rd" "P@ssw0rd"........................passed
+And user clicks on register button..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Reset Password" name="user resets his password" time="10.155">
+<failure message="The following asserts failed:&#10;&#9;expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[Given user go to login page.................................................passed
+And user press on Forget Password...........................................passed
+And user fill his email.....................................................passed
+And user click on recover button............................................passed
+Then message of instruction is displayed....................................failed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at StepDefinitions.D03_PasswordResetStepDef.message_of_instruction_is_displayed(D03_PasswordResetStepDef.java:27)
+	at ✽.message of instruction is displayed(file:///C:/Users/3D/IdeaProjects/EcommerceB2c/src/main/resources/Features/F03_PasswordReset.feature:15)
+]]></failure>
+</testcase>
+<testcase classname="Logged User Could Search for Product" name="user login successfully and search for any product" time="13.514">
+<system-out><![CDATA[Given user go to register page..............................................passed
+And user enter first name "Ahmed" and last name "Fares".....................passed
+And user enter email "fares.ahmed311@gmail.com" field.......................passed
+And user fills Password fields "P@ssw0rd" "P@ssw0rd"........................passed
+And user clicks on register button..........................................passed
+Then success message is displayed...........................................passed
+And user search for item "Apple"............................................passed
+And user press on search button.............................................passed
+Then user finds product search result.......................................passed
+And user search for item SKU "APPLE_CAM"....................................passed
+And user press on search button.............................................passed
+Then user find SKU result...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Switch Currency to Euro" name="user select euro currency and items price convert to euro" time="9.305">
+<system-out><![CDATA[Given user go to home page..................................................passed
+And user switch to euro currency............................................passed
+Then items price currency change to euro....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Hovering to different Categories" name="user go to home page and select different categories" time="10.484">
+<system-out><![CDATA[Given user go to home page..................................................passed
+When user hover on Electronics category Tab and select Cell phones..........passed
+Then Cell phones from Electronics is loaded.................................passed
+When user select computer Category Tab......................................passed
+Then computer Category tab is loaded........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="user filter using color" name="_2" time="10.996">
+<system-out><![CDATA[Given user go to home page..................................................passed
+When user hover on Apparel and selects shoes subcategory....................passed
+And user filter with color red..............................................passed
+Then user check that only one shoe is appearing.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Different Tag selection" name="user selects different tags" time="10.059">
+<system-out><![CDATA[Given user go to home page..................................................passed
+When user select computer Category Tab......................................passed
+And user select tag cool from popular tags..................................passed
+Then page load with title containing cool...................................passed
+And user select tag game from popular tags..................................passed
+Then page load with title containing game...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="add products to shopping cart" name="user can add different products to shopping cart" time="15.125">
+<system-out><![CDATA[Given user go to register page..............................................passed
+And user enter first name "Ahmed" and last name "Fares".....................passed
+And user enter email "fares.ahmed1114@gmail.com" field......................passed
+And user fills Password fields "P@ssw0rd" "P@ssw0rd"........................passed
+And user clicks on register button..........................................passed
+Then success message is displayed...........................................passed
+When user go to home page...................................................passed
+And user click on item apple macBook........................................passed
+And user add item apple macBook to cart.....................................passed
+Then confirm message appears................................................passed
+And user click on item samsung laptop.......................................passed
+And user add item samsung laptop to cart....................................passed
+Then confirm message appears................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="add products to wishlist" name="user can add different products to wishlist" time="13.98">
+<system-out><![CDATA[Given user go to register page..............................................passed
+And user enter first name "Ahmed" and last name "Fares".....................passed
+And user enter email "fares.ahmed25@gmail.com" field........................passed
+And user fills Password fields "P@ssw0rd" "P@ssw0rd"........................passed
+And user clicks on register button..........................................passed
+Then success message is displayed...........................................passed
+When user go to home page...................................................passed
+And user click on item apple macBook........................................passed
+And user add item apple macBook to wishlist.................................passed
+Then confirm message wishlist appears.......................................passed
+And user click on item samsung laptop.......................................passed
+And user add item samsung laptop to wishlist................................passed
+Then confirm message wishlist appears.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="add products to comparelist" name="user can add different products to comparelist" time="14.905">
+<system-out><![CDATA[Given user go to register page..............................................passed
+And user enter first name "Ahmed" and last name "Fares".....................passed
+And user enter email "fares.ahmed126@gmail.com" field.......................passed
+And user fills Password fields "P@ssw0rd" "P@ssw0rd"........................passed
+And user clicks on register button..........................................passed
+Then success message is displayed...........................................passed
+When user go to home page...................................................passed
+And user click on item apple macBook........................................passed
+And user add item apple macBook to comparelist..............................passed
+Then confirm message wishlist appears.......................................passed
+And user click on item samsung laptop.......................................passed
+And user add item samsung laptop to comparelist.............................passed
+Then confirm message comparelist appears....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Order Creation" name="user makes an order successfully" time="19.414">
+<system-out><![CDATA[Given user go to register page..............................................passed
+And user enter first name "Ahmed" and last name "Fares".....................passed
+And user enter email "fares.ahmed117@gmail.com" field.......................passed
+And user fills Password fields "P@ssw0rd" "P@ssw0rd"........................passed
+And user clicks on register button..........................................passed
+Then success message is displayed...........................................passed
+When user go to home page...................................................passed
+And user click on item apple macBook........................................passed
+And user add item apple macBook to cart.....................................passed
+Then confirm message appears................................................passed
+When user press on Shopping cart............................................passed
+Then shopping cart page loads...............................................passed
+When user check accept box to agree terms...................................passed
+And user click checkout button..............................................passed
+Then checkout page loads....................................................passed
+When user update billing address............................................passed
+And user press billing address continue button..............................passed
+And user selected delivery method and pressed continue......................passed
+And user selected payment method and pressed continue.......................passed
+And user pressed payment information continue button........................passed
+And user pressed confirm continue button....................................passed
+Then message of successful order appear.....................................passed
+]]></system-out>
+</testcase>
+</testsuite>

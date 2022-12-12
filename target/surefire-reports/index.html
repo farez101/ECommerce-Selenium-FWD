@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Surefire_suite">
+              <span class="suite-name border-failed">Surefire suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Surefire_suite">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Surefire_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Surefire_suite">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Surefire_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Surefire_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Surefire_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Surefire_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">14 methods, 2 failed,   12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="Runner.runners" hash-for-method="runScenario(&quot;user resets his password&quot;, &quot;Optional[Reset Password]&quot;)">runScenario("user resets his password", "Optional[Reset Password]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="Runner.runners" hash-for-method="runScenario(&quot;user could login with valid email and password&quot;, &quot;Optional[F02_Login | users could use login functi...)">runScenario("user could login with valid email and password", "Optional[F02_Login | users could use login functi...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="Runner.runners" hash-for-method="runScenario(&quot;user select euro currency and items price convert to euro&quot;, &quot;Optional[Switch Currency to Euro]&quot;)">runScenario("user select euro currency and items price convert to euro", "Optional[Switch Currency to Euro]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="Runner.runners" hash-for-method="runScenario(&quot;user can add different products to comparelist&quot;, &quot;Optional[add products to comparelist]&quot;)">runScenario("user can add different products to comparelist", "Optional[add products to comparelist]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="Runner.runners" hash-for-method="runScenario(&quot;guest user could register with valid data successfully&quot;, &quot;Optional[F01_Register | users could regis...)">runScenario("guest user could register with valid data successfully", "Optional[F01_Register | users could regis...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="Runner.runners" hash-for-method="runScenario(&quot;user could login with invalid email and password&quot;, &quot;Optional[F02_Login | users could use login func...)">runScenario("user could login with invalid email and password", "Optional[F02_Login | users could use login func...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="Runner.runners" hash-for-method="runScenario(&quot;user register in site&quot;, &quot;Optional[Reset Password]&quot;)">runScenario("user register in site", "Optional[Reset Password]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="Runner.runners" hash-for-method="runScenario(&quot;user go to home page and select different categories&quot;, &quot;Optional[Hovering to different Categories]&quot;)">runScenario("user go to home page and select different categories", "Optional[Hovering to different Categories]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="Runner.runners" hash-for-method="runScenario(&quot;user can add different products to shopping cart&quot;, &quot;Optional[add products to shopping cart]&quot;)">runScenario("user can add different products to shopping cart", "Optional[add products to shopping cart]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="Runner.runners" hash-for-method="runScenario(&quot;user selects different tags&quot;, &quot;Optional[Different Tag selection]&quot;)">runScenario("user selects different tags", "Optional[Different Tag selection]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="Runner.runners" hash-for-method="runScenario(&quot;user login successfully and search for any product&quot;, &quot;Optional[Logged User Could Search for Product...)">runScenario("user login successfully and search for any product", "Optional[Logged User Could Search for Product...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="Runner.runners" hash-for-method="runScenario(&quot;user makes an order successfully&quot;, &quot;Optional[Order Creation]&quot;)">runScenario("user makes an order successfully", "Optional[Order Creation]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="Runner.runners" hash-for-method="runScenario(&quot;&quot;, &quot;Optional[user filter using color]&quot;)">runScenario("", "Optional[user filter using color]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="Runner.runners" hash-for-method="runScenario(&quot;user can add different products to wishlist&quot;, &quot;Optional[add products to wishlist]&quot;)">runScenario("user can add different products to wishlist", "Optional[add products to wishlist]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Runner.runners</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;user resets his password&quot;, &quot;Optional[Reset Password]&quot;)">
+                  </a> <!-- runScenario("user resets his password", "Optional[Reset Password]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("user resets his password", "Optional[Reset Password]")</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at StepDefinitions.D03_PasswordResetStepDef.message_of_instruction_is_displayed(D03_PasswordResetStepDef.java:27)
+	at ✽.message of instruction is displayed(file:///C:/Users/3D/IdeaProjects/EcommerceB2c/src/main/resources/Features/F03_PasswordReset.feature:15)
+... Removed 2 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;user could login with valid email and password&quot;, &quot;Optional[F02_Login | users could use login functi...)">
+                  </a> <!-- runScenario("user could login with valid email and password", "Optional[F02_Login | users could use login functi...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("user could login with valid email and password", "Optional[F02_Login | users could use login functionality to use their accounts]")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.ico\-account&quot;}
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c6e79835990f6cc3efc7d591ab9dc89a, findElement {using=class name, value=ico-account}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\3D\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:59268}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59268/devtoo..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c6e79835990f6cc3efc7d591ab9dc89a
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at Pages.P02_login.getMyAccountTab(P02_login.java:21)
+	at StepDefinitions.D02_loginStepDef.user_login_to_the_system_successfully(D02_loginStepDef.java:35)
+	at ✽.user login to the system successfully(file:///C:/Users/3D/IdeaProjects/EcommerceB2c/src/main/resources/Features/F02_Login.feature:7)
+... Removed 4 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Runner.runners</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;user select euro currency and items price convert to euro&quot;, &quot;Optional[Switch Currency to Euro]&quot;)">
+                  </a> <!-- runScenario("user select euro currency and items price convert to euro", "Optional[Switch Currency to Euro]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("user select euro currency and items price convert to euro", "Optional[Switch Currency to Euro]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;user can add different products to comparelist&quot;, &quot;Optional[add products to comparelist]&quot;)">
+                  </a> <!-- runScenario("user can add different products to comparelist", "Optional[add products to comparelist]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("user can add different products to comparelist", "Optional[add products to comparelist]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;guest user could register with valid data successfully&quot;, &quot;Optional[F01_Register | users could regis...)">
+                  </a> <!-- runScenario("guest user could register with valid data successfully", "Optional[F01_Register | users could regis...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("guest user could register with valid data successfully", "Optional[F01_Register | users could register with new accounts]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;user could login with invalid email and password&quot;, &quot;Optional[F02_Login | users could use login func...)">
+                  </a> <!-- runScenario("user could login with invalid email and password", "Optional[F02_Login | users could use login func...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("user could login with invalid email and password", "Optional[F02_Login | users could use login functionality to use their accounts]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;user register in site&quot;, &quot;Optional[Reset Password]&quot;)">
+                  </a> <!-- runScenario("user register in site", "Optional[Reset Password]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("user register in site", "Optional[Reset Password]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;user go to home page and select different categories&quot;, &quot;Optional[Hovering to different Categories]&quot;)">
+                  </a> <!-- runScenario("user go to home page and select different categories", "Optional[Hovering to different Categories]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("user go to home page and select different categories", "Optional[Hovering to different Categories]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;user can add different products to shopping cart&quot;, &quot;Optional[add products to shopping cart]&quot;)">
+                  </a> <!-- runScenario("user can add different products to shopping cart", "Optional[add products to shopping cart]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("user can add different products to shopping cart", "Optional[add products to shopping cart]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;user selects different tags&quot;, &quot;Optional[Different Tag selection]&quot;)">
+                  </a> <!-- runScenario("user selects different tags", "Optional[Different Tag selection]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("user selects different tags", "Optional[Different Tag selection]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;user login successfully and search for any product&quot;, &quot;Optional[Logged User Could Search for Product...)">
+                  </a> <!-- runScenario("user login successfully and search for any product", "Optional[Logged User Could Search for Product...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("user login successfully and search for any product", "Optional[Logged User Could Search for Product]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;user makes an order successfully&quot;, &quot;Optional[Order Creation]&quot;)">
+                  </a> <!-- runScenario("user makes an order successfully", "Optional[Order Creation]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("user makes an order successfully", "Optional[Order Creation]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;&quot;, &quot;Optional[user filter using color]&quot;)">
+                  </a> <!-- runScenario("", "Optional[user filter using color]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("", "Optional[user filter using color]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;user can add different products to wishlist&quot;, &quot;Optional[add products to wishlist]&quot;)">
+                  </a> <!-- runScenario("user can add different products to wishlist", "Optional[add products to wishlist]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("user can add different products to wishlist", "Optional[add products to wishlist]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Surefire suite&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Surefire test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Runner.runners&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Surefire test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(14);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'Runner.runners')
+data.setCell(0, 3, 19921);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'Runner.runners')
+data.setCell(1, 3, 19475);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'Runner.runners')
+data.setCell(2, 3, 15204);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'Runner.runners')
+data.setCell(3, 3, 15197);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'Runner.runners')
+data.setCell(4, 3, 14941);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'Runner.runners')
+data.setCell(5, 3, 14025);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'Runner.runners')
+data.setCell(6, 3, 13556);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'Runner.runners')
+data.setCell(7, 3, 11023);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'Runner.runners')
+data.setCell(8, 3, 10555);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'Runner.runners')
+data.setCell(9, 3, 10520);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'runScenario')
+data.setCell(10, 2, 'Runner.runners')
+data.setCell(10, 3, 10222);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'runScenario')
+data.setCell(11, 2, 'Runner.runners')
+data.setCell(11, 3, 10128);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'runScenario')
+data.setCell(12, 2, 'Runner.runners')
+data.setCell(12, 3, 10076);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'runScenario')
+data.setCell(13, 2, 'Runner.runners')
+data.setCell(13, 3, 9331);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">Runner.runners</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@2d22d3b1)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("guest user could register with valid data successfully", "Optional[F01_Register | users could regis...)</span>
+                <span class="method-start">2868 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("user could login with valid email and password", "Optional[F02_Login | users could use login functi...)</span>
+                <span class="method-start">18079 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("user could login with invalid email and password", "Optional[F02_Login | users could use login func...)</span>
+                <span class="method-start">38022 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("user register in site", "Optional[Reset Password]")</span>
+                <span class="method-start">48151 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("user resets his password", "Optional[Reset Password]")</span>
+                <span class="method-start">58706 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("user login successfully and search for any product", "Optional[Logged User Could Search for Product...)</span>
+                <span class="method-start">68929 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("user select euro currency and items price convert to euro", "Optional[Switch Currency to Euro]")</span>
+                <span class="method-start">82486 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("user go to home page and select different categories", "Optional[Hovering to different Categories]")</span>
+                <span class="method-start">91818 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("", "Optional[user filter using color]")</span>
+                <span class="method-start">102338 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("user selects different tags", "Optional[Different Tag selection]")</span>
+                <span class="method-start">113362 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("user can add different products to shopping cart", "Optional[add products to shopping cart]")</span>
+                <span class="method-start">123438 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("user can add different products to wishlist", "Optional[add products to wishlist]")</span>
+                <span class="method-start">138635 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("user can add different products to comparelist", "Optional[add products to comparelist]")</span>
+                <span class="method-start">152661 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("user makes an order successfully", "Optional[Order Creation]")</span>
+                <span class="method-start">167603 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">187081 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

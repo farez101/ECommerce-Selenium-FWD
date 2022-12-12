@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+Test set: Runner.runners
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 188.757 s <<< FAILURE! - in Runner.runners
+Runner.runners.runScenario  Time elapsed: 19.934 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":".ico\-account"}
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c6e79835990f6cc3efc7d591ab9dc89a, findElement {using=class name, value=ico-account}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\3D\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:59268}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59268/devtoo..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c6e79835990f6cc3efc7d591ab9dc89a
+
+Runner.runners.runScenario  Time elapsed: 10.223 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [true] but found [false]
+

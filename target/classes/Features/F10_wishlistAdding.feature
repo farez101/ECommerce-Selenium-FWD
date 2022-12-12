@@ -3,7 +3,7 @@ Feature: add products to wishlist
   Scenario: user can add different products to wishlist
     Given user go to register page
     And user enter first name "Ahmed" and last name "Fares"
-    And user enter email "fares.ahmed5@gmail.com" field
+    And user enter email "fares.ahmed25@gmail.com" field
     And user fills Password fields "P@ssw0rd" "P@ssw0rd"
     And user clicks on register button
     Then success message is displayed
